@@ -34,9 +34,7 @@ namespace _9015_questions
 
         //3
         //follow for:
-        //WhatDoes1(10, 25, 1)
-        //WhatDoes1(100, 105, 0)
-        //WhatDoes1(200, 209, 2)
+        //WhatDoes1(2349)
         //what does WhatDoes1 do?
         static int WhatDoes1(int n)
         {
