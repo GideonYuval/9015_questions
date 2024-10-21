@@ -38,7 +38,13 @@ namespace _9015_questions
         //what does WhatDoes1 do?
         static int WhatDoes1(int n)
         {
-            return 0;
+            if (n == 0)
+                return 0;
+            else
+                if ((n % 10) % 3 == 0)
+                return WhatDoes1(n / 10);
+            else
+                return (n % 10) + WhatDoes1(n / 10);
         }
 
         //4
@@ -49,7 +55,17 @@ namespace _9015_questions
         //what does WhatDoes2 do?
         static int WhatDoes2(int a, int b)
         {
-            return 0;
+            if (a > b)
+                return 0;
+            int sum = 0;
+            int current = a;
+            while (current != 0)
+            {
+                if (current % 2 == 0)
+                    sum += current % 10;
+                current /= 10;
+            }
+            return sum + WhatDoes2(a + 1, b);
         }
 
 
